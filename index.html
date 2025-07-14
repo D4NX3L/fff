@@ -5,43 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MTF - Manejo de Tus Finanzas</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f2f5f9;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
     header {
-      background: #005baa;
+      background-color: #005baa;
       color: white;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
     }
+
+    header h1 {
+      font-size: 2em;
+    }
+
     nav {
-      text-align: center;
-      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
     }
-    nav button {
-      margin: 0 10px;
-      padding: 10px 20px;
-      background: #0077cc;
+
+    nav a {
+      text-decoration: none;
+      background-color: #0077cc;
       color: white;
-      border: none;
+      padding: 10px 20px;
       border-radius: 5px;
-      cursor: pointer;
+      transition: background 0.3s;
     }
+
+    nav a:hover {
+      background-color: #005faa;
+    }
+
     main {
       max-width: 800px;
-      margin: 40px auto;
-      background: white;
+      margin: 0 auto;
       padding: 20px;
+      background-color: white;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
+
+    main h2 {
+      margin-bottom: 15px;
+      color: #005baa;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
     footer {
       text-align: center;
-      padding: 10px;
-      color: #555;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #666;
+      background-color: #f0f0f0;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -49,28 +82,28 @@
 
   <header>
     <h1>MTF - Manejo de Tus Finanzas</h1>
-    <p>Organiza tus ingresos, gastos y ahorros en un solo lugar</p>
+    <p>Administra tu dinero de forma sencilla, clara y personalizada</p>
   </header>
 
   <nav>
-    <button onclick="alert('Función de Inicio de Sesión')">Iniciar Sesión</button>
-    <button onclick="alert('Función de Registro')">Registrarse</button>
+    <a href="#">Iniciar Sesión</a>
+    <a href="#">Registrarse</a>
   </nav>
 
   <main>
-    <h2>¿Qué puedes hacer aquí?</h2>
+    <h2>¿Qué puedes hacer con MTF?</h2>
     <ul>
-      <li>Registrar tu salario mensual, quincenal o anual</li>
+      <li>Ingresar tu sueldo mensual, quincenal o anual</li>
       <li>Organizar tus gastos: arriendo, mercado, deudas, facturas, etc.</li>
-      <li>Plantear metas de ahorro</li>
-      <li>Consultar gráficos con tus movimientos por fecha</li>
-      <li>Usar un chatbot experto en finanzas</li>
-      <li>Distribuir tu dinero automáticamente: mercado, arriendo, ahorro y uso personal</li>
+      <li>Establecer metas de ahorro y seguir tu progreso</li>
+      <li>Ver gráficos de cómo se mueve tu dinero con el tiempo</li>
+      <li>Usar un chatbot con conocimientos financieros</li>
+      <li>Recibir sugerencias automáticas para distribuir tu dinero</li>
     </ul>
   </main>
 
   <footer>
-    © 2025 MTF - Todos los derechos reservados
+    © 2025 MTF - Manejo de Tus Finanzas. Todos los derechos reservados.
   </footer>
 
 </body>
